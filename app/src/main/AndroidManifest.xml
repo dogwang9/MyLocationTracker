@@ -16,6 +16,15 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MyLocationTracker">
         <activity
+            android:name=".MainUpdateActivity"
+            android:exported="true">
+<!--            <intent-filter>-->
+<!--                <action android:name="android.intent.action.MAIN" />-->
+
+<!--                <category android:name="android.intent.category.LAUNCHER" />-->
+<!--            </intent-filter>-->
+        </activity>
+        <activity
             android:name=".RouteActivity"
             android:exported="false" />
         <activity
@@ -28,18 +37,11 @@
             android:name=".QrScanActivity"
             android:exported="false" />
         <activity
-            android:name=".TestActivity"
-            android:exported="false" />
-        <activity
             android:name=".MyZoneActivity"
             android:exported="false" />
         <activity
             android:name=".QrGenerateActivity"
             android:exported="false" />
-        <activity
-            android:name=".CaptureActivityPortrait"
-            android:screenOrientation="portrait"
-            android:theme="@style/zxing_CaptureTheme" />
 
         <meta-data
             android:name="com.google.mlkit.vision.DEPENDENCIES"
