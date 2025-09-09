@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">MyLocationTracker</string>
+    <string name="title_activity_maps">MapsActivity</string>
+    <string name="text_label_1">page 1</string>
+    <string name="text_label_2">page 2</string>
+    <string name="submit">submit</string>
+</resources>
