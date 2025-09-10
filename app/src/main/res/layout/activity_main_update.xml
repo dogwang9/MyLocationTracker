@@ -29,7 +29,7 @@
     <GridLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:columnCount="3"
+        android:columnCount="4"
         android:padding="16dp">
 
         <LinearLayout
@@ -48,7 +48,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="距离测量"
+                android:text="@string/measurement"
                 android:textSize="14sp" />
         </LinearLayout>
 
@@ -68,12 +68,32 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="地理编码"
+                android:text="@string/geocoding"
                 android:textSize="14sp" />
         </LinearLayout>
 
+<!--        <LinearLayout-->
+<!--            android:id="@+id/item_qr"-->
+<!--            android:layout_width="0dp"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_columnWeight="1"-->
+<!--            android:gravity="center"-->
+<!--            android:orientation="vertical">-->
+
+<!--            <ImageView-->
+<!--                android:layout_width="48dp"-->
+<!--                android:layout_height="48dp"-->
+<!--                android:src="@drawable/ic_qrcode" />-->
+
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="@string/qrcode"-->
+<!--                android:textSize="12sp" />-->
+<!--        </LinearLayout>-->
+
         <LinearLayout
-            android:id="@+id/item_qr"
+            android:id="@+id/item_zone"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_columnWeight="1"
@@ -83,27 +103,15 @@
             <ImageView
                 android:layout_width="48dp"
                 android:layout_height="48dp"
-                android:src="@drawable/ic_qrcode" />
+                android:src="@drawable/ic_zone" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="二维码"
+                android:text="@string/myzone"
                 android:textSize="14sp" />
         </LinearLayout>
-
-        <LinearLayout
-            android:id="@+id/item_settings"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_columnWeight="1"
-            android:gravity="center"
-            android:orientation="vertical">
-
-        </LinearLayout>
-
     </GridLayout>
-
 
     <View
         android:layout_width="match_parent"

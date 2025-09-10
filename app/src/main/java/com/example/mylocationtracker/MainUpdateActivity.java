@@ -1,5 +1,6 @@
 package com.example.mylocationtracker;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.activity.EdgeToEdge;
@@ -77,5 +78,26 @@ public class MainUpdateActivity extends AppCompatActivity {
                     break;
             }
         }).attach();
+
+        findViewById(R.id.item_distance).setOnClickListener(v -> {
+            Intent intent = new Intent(this, RouteActivity.class);
+            startActivity(intent);
+        });
+
+        findViewById(R.id.item_geocode).setOnClickListener(v -> {
+            Intent intent = new Intent(this, GeocodingActivity.class);
+            startActivity(intent);
+        });
+
+        findViewById(R.id.item_zone).setOnClickListener(v -> {
+            Intent intent = new Intent(this, MyZoneActivity.class);
+            startActivity(intent);
+        });
+
+        findViewById(R.id.fab_add).setOnClickListener(v -> {
+            Intent intent = new Intent(this, AddContactActivity.class);
+            startActivity(intent);
+        });
+
     }
 }
