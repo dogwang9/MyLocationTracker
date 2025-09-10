@@ -25,4 +25,6 @@
     <string name="addcompany">Add company</string>
     <string name="addschool">Add school</string>
     <string name="addnewarea">Add a new area</string>
+    <string name="serchlocation">Search a location</string>
+    <string name="scope">Scope: 0m</string>
 </resources>
