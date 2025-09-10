@@ -1,43 +1,49 @@
 # MyLocationTracker
 
-一个基于 **Android** 的位置追踪应用，集成了 **Google Maps SDK** 和 **ML Kit 扫码功能**，用于位置记录、路径规划、二维码位置分享等功能。  
+An **Android-based** location tracking application that integrates **Google Maps SDK** and **ML Kit scanning functionality**. It provides features such as location recording, route planning, and QR code location sharing.
 
-## ✨ 功能特性
+## ✨ Features
 
-- **实时定位**  
-  获取用户当前位置并在地图上显示。  
+- **Real-time Location**
+    
+    Get the user’s current location and display it on the map.
+    
+- **Route Planning**
+    
+    Tap on the map to set multiple markers, and the total distance will be calculated automatically.
+    
+- **Geocoding**
+    - Enter a place name → convert it to latitude/longitude and display it on the map
+    - Enter latitude/longitude → convert it to an actual address and display it
+- **QR Code Features**
+    - Generate QR code: convert the current location (latitude/longitude) into a QR code for easy sharing
+    - Scan QR code: extract location information from a QR code and display it on the map
+- **UI Components**
+    - `RecyclerView` supports list, grid, and staggered grid layouts
+    - Custom scanning interface (300x300 scanning frame)
+    - Dynamic map markers, circular overlays, and boundary constraints
 
-- **路径规划**  
-  在地图上点击设置多个标记点（Marker），自动计算总路程。  
+## 📲 Usage Guide
 
-- **地理编码**  
-  - 输入地理位置名称 → 转换为经纬度并显示在地图上  
-  - 输入经纬度 → 转换为实际地址并显示  
-
-- **二维码功能**  
-  - 生成二维码：将当前位置（经纬度）转换为二维码，便于分享  
-  - 扫描二维码：识别二维码中的位置信息，并在地图上显示  
-
-- **UI 组件**  
-  - `RecyclerView` 支持列表、网格、瀑布流布局  
-  - 自定义扫码界面（300x300 扫描框）  
-  - 动态地图标记、圆形覆盖物、边界限制  
-
-## 📲 使用说明
-
-1. 克隆项目
-   ```bash
-   git clone https://github.com/dogwang9/MyLocationTracker.git
-   cd MyLocationTracker
-
-2. 配置 Google Maps API Key
-   在项目根目录创建 secrets.properties 文件，添加：
-   ```bash
-   MAPS_API_KEY=YOUR_GOOGLE_MAPS_API_KEY
-
-3. 在 Android Studio 中打开项目，确保已安装：
+1. Clone the project
+    
+    ```bash
+    git clone <https://github.com/dogwang9/MyLocationTracker.git>
+    cd MyLocationTracker
+    
+    ```
+    
+2. Configure the Google Maps API Key  
+   Create a `secrets.properties` file in the project root directory and add:
+    
+    ```bash
+    MAPS_API_KEY=YOUR_GOOGLE_MAPS_API_KEY
+    
+    ```
+    
+3. Open the project in Android Studio and ensure the following are installed:
     - Android SDK 34+
     - Google Play services
-    - AndroidX 库
+    - AndroidX libraries
+4. Run the app, grant location permissions, and start using it.
 
-4. 运行应用，授予定位权限，即可开始使用。
