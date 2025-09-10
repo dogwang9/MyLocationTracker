@@ -21,4 +21,8 @@
     <string name="enterlatitude">Enter Latitude</string>
     <string name="enterlongitude">Enter Longitude</string>
     <string name="latlngtomarker">Latitude and Longitude to Marker</string>
+    <string name="addhome">Add home</string>
+    <string name="addcompany">Add company</string>
+    <string name="addschool">Add school</string>
+    <string name="addnewarea">Add a new area</string>
 </resources>
