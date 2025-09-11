@@ -27,4 +27,13 @@
     <string name="addnewarea">Add a new area</string>
     <string name="serchlocation">Search a location</string>
     <string name="scope">Scope: 0m</string>
+    <string name="save">Save</string>
+    <string name="entername">Enter a name for the area</string>
+    <string name="example">example: home</string>
+    <string name="triggers">Triggers</string>
+    <string name="alerts">Alerts</string>
+    <string name="selftrigger">When I enter/leave an alert area</string>
+    <string name="contactstrigger">When contacts enter/leave an alert area</string>
+    <string name="enteralerts">When entering location</string>
+    <string name="levingalerts">When leaving location</string>
 </resources>

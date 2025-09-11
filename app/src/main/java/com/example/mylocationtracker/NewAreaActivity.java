@@ -10,6 +10,7 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
+import com.example.mylocationtracker.fragment.BottomSheetFragment;
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.OnMapReadyCallback;
 import com.google.android.gms.maps.SupportMapFragment;
@@ -40,8 +41,10 @@ public class NewAreaActivity extends AppCompatActivity implements OnMapReadyCall
 
         mSerchEditText = findViewById(R.id.et_search);
         findViewById(R.id.bt_next).setOnClickListener(v -> {
-            // TODO 点击next后
+            BottomSheetFragment bottomSheet = new BottomSheetFragment();
+            bottomSheet.show(getSupportFragmentManager(), "NextBottomSheet");
         });
+
     }
 
     @Override

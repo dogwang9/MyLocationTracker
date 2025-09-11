@@ -11,4 +11,6 @@
     <color name="teal_200">#03DAC5</color>
     <color name="blue">#1296db</color>
 
+    <color name="gray">#9E9E9E</color>
+    <color name="light_gray">#E0E0E0</color>
 </resources>
